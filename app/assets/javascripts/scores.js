@@ -6,7 +6,9 @@
 console.log('ok')
 
 // 以下htmlの読み込み後に読み込まれる
+
 $(function(){ 
+
   $('.select').on('click', function(){
     var id = $(this).attr("id");
     addrem(id)
@@ -23,6 +25,7 @@ $(function(){
     console.log(e.to + ' showindex');
     addrem(e.to);
   };
+  
   function cl(n){
     console.log(n + ' cl')
     $('.carousel').carousel(Number(n))
