@@ -19,20 +19,3 @@
 //= require_tree .
 
 
-
-$('.select').on('click', function(){
-  var id = $(this).attr("id");
-  addrem(id)
-  cl(id)
-});
-
-function addrem(no){
-  $(".bars *").removeClass("active text-primary");
-  $("#"+no).addClass("active text-primary");
-};
-
-$('#myCarousel').on('slide.bs.carousel', showindex) ;
-function showindex(e){
-  console.log(e.to + 'showindex');
-  addrem(e.to);
-}

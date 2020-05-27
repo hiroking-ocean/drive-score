@@ -16,8 +16,8 @@ $(function(){
   });
 
   function addrem(no){
-    $(".bars *").removeClass("active text-primary");
-    $("#"+no).addClass("active text-primary");
+    $(".bars *").removeClass("active bg-info text-white");
+    $("#"+no).addClass("active bg-info text-white");
   };
 
   $('#myCarousel').on('slide.bs.carousel', showindex) ;
@@ -25,7 +25,7 @@ $(function(){
     console.log(e.to + ' showindex');
     addrem(e.to);
   };
-  
+
   function cl(n){
     console.log(n + ' cl')
     $('.carousel').carousel(Number(n))

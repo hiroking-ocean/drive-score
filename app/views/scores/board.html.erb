@@ -1,33 +1,33 @@
 
-<div class="container-fluid">
+<div class=" h4">
 
-  <ul class="nav nav-tabs bars">
-    <li class="nav-item">
-      <a class="nav-link active select text-primary" id="0">安全確認</a>
+  <ul class="nav nav-tabs bars raw">
+    <li class="mx-auto col nav-item">
+      <a class="text-center nav-link select active bg-info text-white" id="0">安全確認</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link select" id="1">合図</a>
+    <li class="col nav-item">
+      <a class="text-center nav-link select" id="1">合図</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link select" id="2">安全確認</a>
+    <li class="col nav-item">
+      <a class="text-center nav-link select" id="2">安全確認</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link select" id="3">速度維持</a>
+    <li class="col nav-item">
+      <a class="text-center nav-link select" id="3">速度維持</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link select" id="4">右左折</a>
+    <li class="col nav-item">
+      <a class="text-center nav-link select" id="4">右左折</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link select" id="5">停車</a>
+    <li class="col nav-item">
+      <a class="text-center nav-link select" id="5">停車</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link select" id="6">確認</a>
+    <li class="col nav-item">
+      <a class="text-center nav-link select" id="6">確認</a>
     </li>
   </ul>
   
 
   
-  <div id="myCarousel" class="carousel slide row" data-ride="carousel" data-interval="false">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <%= render partial: 'anzenkakunin' %>
@@ -44,7 +44,7 @@
       <div class="carousel-item">
         <%= render partial: 'usasetu' %>
       </div>
-      <div class="carousel-item">
+      <div class="table-responsive table-hover carousel-item">
         <%= render partial: 'teisha' %>
       </div>
       <div class="carousel-item">
