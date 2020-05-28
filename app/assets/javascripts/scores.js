@@ -5,6 +5,8 @@
 
 console.log('ok')
 
+// 以下はtableへのclass適用script
+
 // 以下htmlの読み込み後に読み込まれる
 
 $(function(){ 
@@ -30,5 +32,14 @@ $(function(){
     console.log(n + ' cl')
     $('.carousel').carousel(Number(n))
   };
+  
+  $('thead .details').addClass('text-center align-middle')
+  $('thead .apply').addClass('text-center align-middle')
+  $('thead .points').addClass('text-center align-middle');
+
+  $('tbody .details').addClass('text-center align-middle vr')
+  $('tbody .apply').addClass('align-middle')
+  $('tbody .points').addClass('text-center align-middle');
+
 });
 

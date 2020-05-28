@@ -1,7 +1,31 @@
 // Place all the styles related to the scores controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
 .nav > li > a{
   display: block;
   height: 100%;
+}
+
+// 以下table用
+
+.details{
+  width: 12%;
+}
+.apply{
+  width: 78%;
+}
+.points{
+  width: 10%;
+  text-align: center;
+}
+.vr p{
+  display: inline;
+  padding-left:10px;
+  margin: auto;
+  writing-mode: vertical-lr;
+}
+.apply{
+  padding-left: 10px;
 }
