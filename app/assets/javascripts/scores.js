@@ -47,6 +47,6 @@ $(function(){
   $('tbody .apply').addClass('align-middle')
   $('tbody .points').addClass('text-center align-middle');
 
-
+  $('#red').addClass('text-danger')
 });
 
