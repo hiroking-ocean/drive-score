@@ -1,44 +1,66 @@
-<table class="table table-bordered">
+<table class="table-hover" border="1" bordercolor="#000">
   <thead class="bg-warning">
     <tr>
-        <td class="col-xs-3">減点細目</td>
-        <td class="col-xs-7">適用事項</td>
-        <td class="col-xs-2">減点数</td>
+        <td class="details">細目</td>
+        <td class="apply">適用事項</td>
+        <td class="points">減点</td>
     </tr>
   </thead>
 
-  <!-- <tbody>
-    <tr>
-        <td class="col-xs-4">駐車措置違反</td>
-        <td class="col-xs-4">
+  <tbody>
+    <tr> 
+        <td class="details"><p>【駐車措置違反】</p></td>
+        <td class="apply">
             <p>１．ハンドブレーキをかけない時</p>
             <p>２．エンジンを止めない時</p>
             <p>３．ギアをリバース又は１速（ＡＴ車はＰレンジ）に入れない時</p>
         </td>
-        <td class="col-xs-4">5</td>
+        <td class="points">5</td>
     </tr>
 
     <tr>
-        <td class="col-xs-4">停止位置不適</td>
-        <td class="col-xs-4">
+        <td class="details"><p>【停止位置不適】</p></td>
+        <td class="apply">
             <p>停止目標物（ポール等）から、車体の先端が前方又は後方に０．３ｍ以上離れて停止した場合</p>
         </td>
-        <td class="col-xs-4">5</td>
+        <td class="points">5</td>
     </tr>
 
     <tr>
-        <td class="col-xs-4">駐停車方法違反</td>
-        <td class="col-xs-4">路端へ駐停車する場合に、道路の左側端から車体が、０．３ｍ以上離れている時</td>
-        <td class="col-xs-4">5</td>
+        <td class="details"><p>【駐停車方法違反】</p></td>
+        <td class="apply">路端へ駐停車する場合に、道路の左側端から車体が、０．３ｍ以上離れている時</td>
+        <td class="points">5</td>
     </tr>
-  </tbody> -->
+  </tbody>
 </table>
 
-<!-- <style>
-  thead > tr > td{
-    border-bottom: 2px solid #000000;
+<style>
+  .details{
+    width: 12%;
   }
-  tbody > td{
-    border: 1px solid #000000;
+  .apply{
+    width: 78%;
   }
-</style> -->
+  .points{
+    width: 10%;
+    text-align: center;
+  }
+  .vr p{
+    display: inline;
+    padding-left:10px;
+    margin: auto;
+    writing-mode: vertical-lr;
+  }
+  .apply{
+    padding-left: 10px;
+  }
+</style>
+<script>
+  $('thead .details').addClass('text-center align-middle')
+  $('thead .apply').addClass('text-center align-middle')
+  $('thead .points').addClass('text-center align-middle');
+
+  $('tbody .details').addClass('text-center align-middle vr')
+  $('tbody .apply').addClass('align-middle')
+  $('tbody .points').addClass('text-center align-middle');
+</script>
