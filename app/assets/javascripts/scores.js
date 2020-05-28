@@ -17,6 +17,11 @@ $(function(){
     cl(id)
   });
 
+  $('.jump').click(function(){
+    cl(1);
+    console.log('発火したよ')
+  });
+
   function addrem(no){
     $(".bars *").removeClass("active bg-info text-white");
     $("#"+no).addClass("active bg-info text-white");
@@ -41,6 +46,7 @@ $(function(){
   $('tbody .details').addClass('text-center align-middle vr')
   $('tbody .apply').addClass('align-middle')
   $('tbody .points').addClass('text-center align-middle');
+
 
 });
 
