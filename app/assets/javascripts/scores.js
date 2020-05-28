@@ -32,11 +32,12 @@ $(function(){
     console.log(n + ' cl')
     $('.carousel').carousel(Number(n))
   };
-  
+
   $('thead .details').addClass('text-center align-middle')
   $('thead .apply').addClass('text-center align-middle')
   $('thead .points').addClass('text-center align-middle');
 
+  $('.vr').addClass('text-center align-middle')
   $('tbody .details').addClass('text-center align-middle vr')
   $('tbody .apply').addClass('align-middle')
   $('tbody .points').addClass('text-center align-middle');
