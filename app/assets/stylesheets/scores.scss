@@ -8,6 +8,9 @@
   height: 100%;
 }
 
+table{
+  table-layout: fixed;
+}
 
 img{
   width: 100%;
@@ -15,18 +18,15 @@ img{
 // 以下table用
 
 .details{
-  background-color: white;
   width: 12%;
 }
 .apply{
   width: 78%;
   padding-left: 10px;
-  background-color: white;
 }
 .points{
   width: 10%;
   text-align: center;
-  background-color: white;
 }
 .vr p{
   display: inline;
