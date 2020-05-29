@@ -19,6 +19,8 @@ img{
 
 .details{
   width: 45px;
+
+  }
 }
 .apply{
   width: 292px;
@@ -29,8 +31,10 @@ img{
   text-align: center;
 }
 .vr p{
-  display: inline;
+  display: inline-block;
   padding-left:10px;
   margin: auto;
   writing-mode: vertical-lr;
+
+  line-height: 100%;
 }
